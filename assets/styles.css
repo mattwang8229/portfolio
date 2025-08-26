@@ -558,3 +558,17 @@ img{max-width:100%; height:auto; display:block; border-radius:12px}
 @media (max-width: 600px){
   .about-hero .about-portrait { height: 220px; }
 }
+
+.tile-toast {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  font-size: 0.85rem;
+  color: var(--accent, #74b4f7);
+  margin-top: 0.5rem;
+}
+
+.tile-toast.show {
+  opacity: 1;
+  visibility: visible;
+}
